@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+        <meta name="description" content="If you run a shop on Magento for instance or you list products on eBay you can easily self-integrate NowDiscover right now. On demand NowDiscover also offers ...">
+        <meta name="keywords">
+        <meta name="author" content="">
+        <title>NowDiscover</title>
+    <!--  meta(property="fb:app_id", content="ID")//- TODO: facebook ID
+    -->
+        <meta property="og:title" content="NowDiscover">
+        <meta property="og:site_name" content="nowdiscover">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.nowdiscover.com">
+        <meta property="og:image" content="https://www.nowdiscover.com/images//facebook_img.png">
+        <meta property="og:description" content="If you run a shop on Magento for instance or you list products on eBay you can easily self-integrate NowDiscover right now. On demand NowDiscover also offers ...">
+        <meta property="og:locale" content="en_US">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="NowDiscover">
+        <meta property="twitter:url" content="https://www.nowdiscover.com">
+        <meta name="twitter:image:src" content="https://www.nowdiscover.com/images//facebook_img.png">
+        <meta name="twitter:description" content="If you run a shop on Magento for instance or you list products on eBay you can easily self-integrate NowDiscover right now. On demand NowDiscover also offers ...">
+        <meta name="twitter:site" content="@username">
+    <meta name="fragment" content="!">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- font-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="styles/vendor.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/vendor/modernizr.js"></script>
+    <script src="scripts/vendor/ga.js"></script>
+    
+  </head>
+</html>
+<body>
+  <!--if lt IE 10
+  p.browserupgrade
+    | You are using an
+    strong outdated
+    |  browser. Please
+    a(href='http://browsehappy.com/') upgrade your browser
+    |  to improve your experience.
+  -->
+  <nav id="nd-nav" role="navigation" class="nd-nav navbar navbar-fixed-top">
+    <div class="container-fluid container">
+      <div class="navbar-header"><a id="nav-logo" href="/" class="navbar-brand"><img src="./images/png/logo.png" alt="NowDiscover logo" class="nav-logo-img"></a></div>
+      <div class="navbar-right pc">
+        <ul class="nav navbar-nav">
+          <li id="nav-contact" class="nav-item"><a href="mailto:info@nowdiscover.com">Contact</a></li>
+          <li id="nav-press" class="nav-item"><a href="./overview.html">Press</a></li>
+          <li id="nav-help" class="nav-item"><a href="./help.html">Help</a></li>
+          <li id="nav-login" class="nav-item"><a href="https://dashboard.nowdiscover.com">Log In</a></li>
+          <li id="nav-signin-btn" class="signup-btn"><a href="https://dashboard.nowdiscover.com/#/register">Sign Up</a></li>
+          <!-- <li class="nav-item"><a href="./team.html">Team</a></li>-->
+          <!-- <li class="nav-item"><a href="#">Login</a></li>-->
+        </ul>
+      </div>
+      <div class="navbar-right mobile">
+        <div class="nav-toggle-btn">
+          <div class="icon-animation type-1"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+        </div>
+        <ul class="nav navbar-nav">
+          <li id="nav-contact" class="nav-item"><a href="mailto:info@nowdiscover.com">Contact</a></li>
+          <li id="nav-press" class="nav-item"><a href="./overview.html">Press</a></li>
+          <li id="nav-help" class="nav-item"><a href="./help.html">Help</a></li>
+          <li id="nav-login" class="nav-item"><a href="https://dashboard.nowdiscover.com">Log In</a></li>
+          <li id="nav-signin-btn" class="signup-btn"><a href="https://dashboard.nowdiscover.com/#/register">Sign Up</a></li>
+          <!-- <li class="nav-item"><a href="./team.html">Team</a></li>-->
+          <!-- <li class="nav-item"><a href="#">Login</a></li>-->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="help">
+    <section class="help-home">
+      <div class="container">
+        <h1 class="help-home-headline">Authorize Magento for NowDiscover</h1>
+        <h3 class="help-home-lead">
+          This guide helps you to setup a dedicated user for NowDiscover in
+          Magento so that both platforms can talk securely to each other.
+        </h3>
+        <p class="help-home-para">
+          To sign up your Magento shop you need to grant NowDiscover access to
+          it. This guide lists what you need before you start. It then shows you
+          how to create a dedicated user role and profile for NowDiscover in
+          Magento so that both platforms can talk to each other in the most
+          secure way.
+        </p>
+        <p class="help-home-note">The process will take you about 3-4 minutes.</p>
+      </div>
+    </section>
+    <section class="help-before">
+      <div class="container">
+        <hr>
+        <h2 class="help-before-title">Before You Start</h2>
+        <div class="content1">
+          <h3 class="help-before-headline">Know the URL of your Magento Shop’s Admin Panel</h3>
+          <h4 class="help-before-lead">
+            To authorize NowDiscover you need to sign in to the Admin Panel of
+            your Magento shop.
+          </h4>
+          <p class="help-before-para help-before-para1">
+            If your Magento shop is set up with standard settings its Admin 
+            Panel is accessible under the URL of your shop amended by the 
+            extension “/admin”. If for instance your shop can be found under “<a href="#">http://example-shop.com</a>”, the Admin Panel is accessible under “<a href="#">http://example-shop.com/admin</a>”.
+          </p>
+          <p class="help-before-para help-before-para2">
+            As some Magento shops use a custom URL for the Admin Panel, the URL 
+            of your Admin Panel might differ from this scheme. If you have a 
+            dedicated person responsible to administrate your shop, she or he is 
+            probably the right person to talk to. In case you have lost this 
+            information you also can find the URL in the E-Mail that you have 
+            received as a confirmation right after Magento had been set up.
+          </p>
+        </div>
+        <div class="content2">
+          <h3 class="help-before-headline">Know the URL of your Magento Shop’s Admin Panel</h3>
+          <h4 class="help-before-lead">
+            A Sign-In ID with administration rights allows you to create new 
+            user roles and profiles at the Magento Admin Panel.
+          </h4>
+          <p class="help-before-para">
+            The sign-in ID that had been used to install the Magento shop system 
+            is usually the sign-in ID with administration rights. If you have a 
+            dedicated person responsible to administrate your shop, she or he is 
+            probably the right person to talk to. In case you have lost this 
+            information you also can reset the password directly at the sign-in 
+            page of the Magento Admin Panel by clicking at “Forgot your 
+            password?”
+          </p>
+        </div>
+        <div class="content3">
+          <h3 class="help-before-headline">Know your Magento Version</h3>
+          <h4 class="help-before-lead">
+            Currently Now Discover supports Magento shop system versions 1.8.x 
+            until 1.9.x and the corresponding sub versions.
+          </h4>
+          <p class="help-before-para">
+            Older versions or Magento 2 are not yet supported. You can securely 
+            check the version of your Magento shop system before you continue with 
+            the sign up process of NowDiscover. Simply sign in to your Magento 
+            Admin panel and check the information at the footer.
+          </p><img src="../images/help/02.png" alt="magento" data-lity class="help-img">
+        </div>
+      </div>
+    </section>
+    <section class="help-step1">
+      <div class="container">
+        <hr>
+        <h2 class="help-step1-title">1. Navigate To User Roles at the Magento Admin Panel</h2>
+        <ol class="help-step1-lists">
+          <li class="help-step1-list">Go to the Admin Panel of your Magento shop</li>
+          <li class="help-step1-list">Sign in</li>
+          <li class="help-step1-list">Select at the top navigation dropdown: “<span class="italic">System > Web Services > SOAP/XML-RPC - Roles</span>”</li>
+        </ol>
+      </div>
+    </section>
+    <section class="help-step2">
+      <div class="container">
+        <hr>
+        <h2 class="help-step2-title">2. Navigate To User Roles at the Magento Admin Panel</h2>
+        <ol class="help-step2-lists">
+          <li class="help-step2-list">Click at “Add new Role” <span class="italic">
+               
+              (Upper Right Corner)</span></li>
+          <li class="help-step2-list">Enter at “Role Name” “NowDiscover” and your password to authorize</li>
+          <li class="help-step2-list">Change the focus of the table to “Role Resources” <span class="italic">
+               
+              (Left Side Bar)</span></li>
+          <li class="help-step2-list">Select at the dropdown “Resource Access” the entry “All”<span class="italic">(Main Cell of Table)</span></li>
+          <li class="help-step2-list">Click at the orange button “Save Role”<span class="italic">(Upper Right Corner)          </span></li>
+        </ol>
+      </div>
+    </section>
+    <section class="help-step3">
+      <div class="container">
+        <hr>
+        <h2 class="help-step3-title">3. Create a Dedicated User for NowDiscover</h2>
+        <ol class="help-step3-lists">
+          <li class="help-step3-list">Select at the Top Navigation Dropdown: “<span class="italic">System > Web Services > SOAP/XML-RPC - Users</span>”</li>
+          <li class="help-step3-list">Click at the orange button “Add new User”<span class="italic">(Upper Right Corner)</span></li>
+          <li class="help-step3-list">Enter at:
+            <div class="help-step3-table">
+              <p class="help-step3-row"><span class="data1">User Name:</span><span class="data2">nowdiscover</span></p>
+              <p class="help-step3-row"><span class="data1">First Name:</span><span class="data2">NowDiscover</span></p>
+              <p class="help-step3-row"><span class="data1">Last Name:</span><span class="data2">NowDiscover</span></p>
+              <p class="help-step3-row"><span class="data1">Email:</span><span class="data2">support@nowdiscover.com</span></p>
+              <p class="help-step3-row"><span class="data1">Current Admin Password:</span><span class="data2">Password of the Magento Sign-In ID with Admin rights</span></p>
+              <p class="help-step3-row"><span class="data1">API Key:</span><span class="data2">Copy-Paste the API-Key generated by NowDiscover</span></p>
+              <p class="help-step3-row"><span class="data1">API Key Confirmation:</span><span class="data2">Copy-Paste the same the API-Key to confirm            </span></p>
+            </div>
+          </li>
+          <li class="help-step3-list">Change the focus of the table to “User Role”<span class="italic">(Left Side Bar)</span></li>
+          <li class="help-step3-list">Select the radio button “NowDiscover”<span class="italic">(Main Cell of Table)</span></li>
+          <li class="help-step3-list">Click on the orange button “Save User”<span class="italic">(Upper Right Corner)</span></li>
+          <li class="help-step3-list">Click on “Log Out” to sign out from Magento<span class="italic">(Upper Right Corner)</span></li>
+          <li class="help-step3-list">Close the browser tab and return the tab with the NowDiscover Registration</li>
+        </ol>
+        <p class="help-step3-note"><span class="help-step3-note">Note:</span><br>If you accidently closed the tab with the NowDiscover sign up you can <a href="https://dashboard.nowdiscover.com" class="help-step3-note-link">continue signing up by simply clicking here. </a></p>
+      </div>
+    </section>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <div class="footer-logo-wrap"><a id="footer-logo" href="/"><img src="../images/png/logo.png" alt="nowdiscover logo" class="footer-logo"></a></div>
+      <div class="footer-right">
+        <ul class="footer-sns-wrap">
+          <li id="tw-link" class="footer-sns-item twitter"><a href="https://twitter.com/nowdiscoverhq" target="_blank"></a></li>
+          <li id="fb-link" class="footer-sns-item facebook"><a href="https://www.facebook.com/nowdiscover1" target="_blank"></a></li>
+          <li id="ld-link" class="footer-sns-item linkedin"><a href="https://www.linkedin.com/company/10148114" target="_blank"></a></li>
+          <li id="em-link" class="footer-sns-item email"><a href="mailto:info@nowdiscover.com" target="_blank"></a></li>
+        </ul>
+        <div class="footer-eu-wrap"><a id="eu-flag" href="imprint.html#eu-flag">
+            <div class="eu-left">
+              <p class="footer-eu-head">EUROPEAN UNION</p>
+              <p class="footer-eu-lead">European Regional Development Fund</p>
+            </div><img src="../images/svg/eu_flag.svg" alt="EU flag" class="footer-eu-flag"></a></div>
+      </div>
+      <div class="footer-text-wrap"><a id="press-link" href="overview.html" class="footer-link">Press</a><a id="imprint-link" href="imprint.html" class="footer-link">Imprint</a><a id="privacy-policy-link" href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+        <p class="footer-copyright">© 2016 NowDiscover GmbH</p>
+      </div>
+    </div>
+  </div>
+  <script src="scripts/vendor.js"></script>
+  <script src="scripts/plugins.js"></script>
+  <script src="scripts/help.js"></script>
+</body>
